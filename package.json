@@ -1,0 +1,27 @@
+{
+  "name": "sample-aigis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "dev": "grunt serve",
+    "styleguide": "aigis init"
+  },
+  "author": "",
+  "license": "ISC",
+  "Dependencies": {},
+  "devDependencies": {
+    "assemble": "0.4.42",
+    "autoprefixer": "6.7.7",
+    "compass-importer": "0.4.1",
+    "cssnano": "3.10.0",
+    "grunt": "1.0.1",
+    "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-connect": "1.0.2",
+    "grunt-postcss": "0.8.0",
+    "grunt-sass": "2.0.0",
+    "jit-grunt": "0.10.0",
+    "node-aigis": "1.4.0",
+    "postcss-assets": "4.1.0"
+  }
+}

@@ -1,0 +1,64 @@
+@charset 'utf-8';
+
+%clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+%accordion-item {
+  width: 100%;
+  &__content {
+    display: none;
+    border: 1px solid $BLACK_COLOR4;
+    border-top: none;
+    border-bottom: none;
+    padding: 0 1rem 1rem 1rem; 
+  }
+}
+
+$CHECK_BOX_COLOR_BG: $WHITE_COLOR0;
+$CHECK_BOX_COLOR_FG: $BLACK_COLOR0;
+$CHECK_BOX_COLOR_BD: $BLACK_COLOR6;
+
+%form-item-base {
+  border-radius: 0.6rem;
+  color: $CHECK_BOX_COLOR_FG;
+  background-color: $CHECK_BOX_COLOR_BG;
+  border: solid 0.1rem $CHECK_BOX_COLOR_BD;
+  font-size: 1.2rem;
+}
+
+%checkbox-item-container-base {
+  display: inline-block;
+  margin: 1.6rem 1.2rem 0 0;
+}
+
+%tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-top: 1.6rem solid $MAIN_COLOR2;
+  border-right: 1.6rem solid $MAIN_COLOR2;
+  border-bottom: 1.6rem transparent solid;
+  border-left: 1.6rem transparent solid;
+  > span {
+    position: absolute;
+    top: -1.4rem;
+    right: -1.4rem;
+    font-size: 1rem; 
+    color: $WHITE_COLOR0;
+  }
+}
+
+%tag--disabled {
+  border-top: 1.6rem solid $BLACK_COLOR2;
+  border-right: 1.6rem solid $BLACK_COLOR2;
+}

@@ -1,0 +1,58 @@
+
+// Variables
+
+// Colors ----------------------------------------------------------------------
+$black:                     #000 !default;
+$gray-dark:                 #333 !default;
+$gray:                      #666 !default;
+$gray-light:                #808080 !default;
+$gray-lighter:              #aba39c !default;
+$gray-lightest:             #f2efec !default;
+$white:                     #fff !default;
+
+$brand-primary:             #fff566 !default;
+$brand-secondary:           #49d0f2 !default; // 96ebfa
+// $brand-success:             #5cb85c !default;
+// $brand-info:                #5bc0de !default;
+$brand-warning:             #ff536b !default;
+// $brand-danger:              #d9534f !default;
+
+
+// components base style -------------------------------------------------------
+$line-height:            1.5 !default;
+$border-radius:          6px !default;
+$box-shadow:             0 2px 2px 0 rgba(0,0,0, 0.2) !default;
+$img-override-bg:        rgba(255, 255, 255, 0.2) !default;
+
+// Buttons ---------------------------------------------------------------------
+// $btn-border-radius:              $border-radius !default;
+$btn-padding-x:                  32px !default;
+$btn-padding-y:                  10px !default;
+
+// default
+$btn-default-color:         $gray-dark;
+$btn-default-color-hover:   lighten($btn-default-color, 10%);
+$btn-default-bg:            $white;
+$btn-default-bg-hover:      lighten($btn-default-bg, 2%);
+
+// primary
+$btn-primary-color:         $black;
+$btn-primary-color-hover:   lighten($btn-primary-color, 20%);
+$btn-primary-bg:            $brand-primary;
+$btn-primary-bg-hover:      lighten($btn-primary-bg, 8%);
+
+// secondary
+$btn-secondary-color:         $black;
+$btn-secondary-color-hover:   lighten($btn-secondary-color, 20%);
+$btn-secondary-bg:            $brand-secondary;
+$btn-secondary-bg-hover:      lighten($btn-secondary-bg, 8%);
+
+
+// Font Size -------------------------------------------------------------------
+// $font-size-root:             16px !default;
+// $font-size-base:             1rem !default;
+// $font-size-lg:               1.25rem !default;   
+// $font-size-md:               1.13rem !default;   
+// $font-size-sm:               0.875rem !default;  
+// $font-size-xs:               0.75rem !default;   
+// $font-size-xxs:              0.69rem !default;   

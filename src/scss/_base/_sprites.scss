@@ -1,0 +1,214 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$close-name: 'close';
+$close-x: 0px;
+$close-y: 52px;
+$close-offset-x: 0px;
+$close-offset-y: -52px;
+$close-width: 7px;
+$close-height: 7px;
+$close-total-width: 78px;
+$close-total-height: 59px;
+$close-image: '../../images/sp/sprites/sprite.png';
+$close: (0px, 52px, 0px, -52px, 7px, 7px, 78px, 59px, '../../images/sp/sprites/sprite.png', 'close', );
+$logo-gurutabi-name: 'logo-gurutabi';
+$logo-gurutabi-x: 0px;
+$logo-gurutabi-y: 26px;
+$logo-gurutabi-offset-x: 0px;
+$logo-gurutabi-offset-y: -26px;
+$logo-gurutabi-width: 70px;
+$logo-gurutabi-height: 22px;
+$logo-gurutabi-total-width: 78px;
+$logo-gurutabi-total-height: 59px;
+$logo-gurutabi-image: '../../images/sp/sprites/sprite.png';
+$logo-gurutabi: (0px, 26px, 0px, -26px, 70px, 22px, 78px, 59px, '../../images/sp/sprites/sprite.png', 'logo-gurutabi', );
+$logo-rem-name: 'logo-rem';
+$logo-rem-x: 0px;
+$logo-rem-y: 0px;
+$logo-rem-offset-x: 0px;
+$logo-rem-offset-y: 0px;
+$logo-rem-width: 78px;
+$logo-rem-height: 22px;
+$logo-rem-total-width: 78px;
+$logo-rem-total-height: 59px;
+$logo-rem-image: '../../images/sp/sprites/sprite.png';
+$logo-rem: (0px, 0px, 0px, 0px, 78px, 22px, 78px, 59px, '../../images/sp/sprites/sprite.png', 'logo-rem', );
+$close-2x-name: 'close@2x';
+$close-2x-x: 0px;
+$close-2x-y: 104px;
+$close-2x-offset-x: 0px;
+$close-2x-offset-y: -104px;
+$close-2x-width: 14px;
+$close-2x-height: 14px;
+$close-2x-total-width: 156px;
+$close-2x-total-height: 118px;
+$close-2x-image: '../../images/sp/sprites/sprite@2x.png';
+$close-2x: (0px, 104px, 0px, -104px, 14px, 14px, 156px, 118px, '../../images/sp/sprites/sprite@2x.png', 'close@2x', );
+$logo-gurutabi-2x-name: 'logo-gurutabi@2x';
+$logo-gurutabi-2x-x: 0px;
+$logo-gurutabi-2x-y: 52px;
+$logo-gurutabi-2x-offset-x: 0px;
+$logo-gurutabi-2x-offset-y: -52px;
+$logo-gurutabi-2x-width: 140px;
+$logo-gurutabi-2x-height: 44px;
+$logo-gurutabi-2x-total-width: 156px;
+$logo-gurutabi-2x-total-height: 118px;
+$logo-gurutabi-2x-image: '../../images/sp/sprites/sprite@2x.png';
+$logo-gurutabi-2x: (0px, 52px, 0px, -52px, 140px, 44px, 156px, 118px, '../../images/sp/sprites/sprite@2x.png', 'logo-gurutabi@2x', );
+$logo-rem-2x-name: 'logo-rem@2x';
+$logo-rem-2x-x: 0px;
+$logo-rem-2x-y: 0px;
+$logo-rem-2x-offset-x: 0px;
+$logo-rem-2x-offset-y: 0px;
+$logo-rem-2x-width: 156px;
+$logo-rem-2x-height: 44px;
+$logo-rem-2x-total-width: 156px;
+$logo-rem-2x-total-height: 118px;
+$logo-rem-2x-image: '../../images/sp/sprites/sprite@2x.png';
+$logo-rem-2x: (0px, 0px, 0px, 0px, 156px, 44px, 156px, 118px, '../../images/sp/sprites/sprite@2x.png', 'logo-rem@2x', );
+$spritesheet-width: 78px;
+$spritesheet-height: 59px;
+$spritesheet-image: '../../images/sp/sprites/sprite.png';
+$spritesheet-sprites: ($close, $logo-gurutabi, $logo-rem, );
+$spritesheet: (78px, 59px, '../../images/sp/sprites/sprite.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 156px;
+$retina-spritesheet-height: 118px;
+$retina-spritesheet-image: '../../images/sp/sprites/sprite@2x.png';
+$retina-spritesheet-sprites: ($close-2x, $logo-gurutabi-2x, $logo-rem-2x, );
+$retina-spritesheet: (156px, 118px, '../../images/sp/sprites/sprite@2x.png', $retina-spritesheet-sprites, );
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+$close-group-name: 'close';
+$close-group: ('close', $close, $close-2x, );
+$logo-gurutabi-group-name: 'logo-gurutabi';
+$logo-gurutabi-group: ('logo-gurutabi', $logo-gurutabi, $logo-gurutabi-2x, );
+$logo-rem-group-name: 'logo-rem';
+$logo-rem-group: ('logo-rem', $logo-rem, $logo-rem-2x, );
+$retina-groups: ($close-group, $logo-gurutabi-group, $logo-rem-group, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}
